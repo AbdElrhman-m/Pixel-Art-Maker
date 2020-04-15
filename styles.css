@@ -1,8 +1,40 @@
+/* All the elements*/
+*, body {
+    margin: 0;
+    padding: 0;
+}
+.contianer{
+    max-width: 800px;
+    margin: auto;
+}
+/*header */
+header{
+    background-color: aliceblue;
+}
+header .contianer h1{
+	width:88%;
+	height:50px;
+	font-family:  TimesNewRoman, "Times New Roman", serif;
+	font-size:25px;
+	line-height:50px;	
+	padding-left:5px;
+	color:#ccc;
+    text-decoration: none;
+    text-align: left;
+	
+}
+header .container  h1 span{
+	font-size:28px;
+	display:inline-block;
+	color:#fff;
+	background-color:#CCC;
+
+}
 body {
     text-align: center;
 }
 
-h1 {
+.game-name {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
