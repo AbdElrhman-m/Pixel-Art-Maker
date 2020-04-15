@@ -1,7 +1,15 @@
-// Select color input
-// Select size input
+// define all the dom element need for this project
+const colorPicker   = document.querySelector("#colorPicker"),
+      sizePicker    = document.querySelector("#sizePicker"),
+      inputHeight   = document.querySelector("#inputHeight").value,
+      inputWidth    = document.querySelector("#inputWidth").value,
+      // the submit button to make a grid
+      createGridBn  = document.querySelector("input[type=submit]"),
+      pixelCanvas   = document.querySelector("#pixelCanvas");
 
-// When size is submitted by the user, call makeGrid()
+// test
+console.log(inputHeight);
+console.log("" + inputWidth);
 
 function makeGrid() {
 
