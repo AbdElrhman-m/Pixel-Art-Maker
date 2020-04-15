@@ -11,6 +11,14 @@ const colorPicker   = document.querySelector("#colorPicker"),
 console.log(inputHeight);
 console.log("" + inputWidth);
 
+function cleanGrid(){
+    "use strict";
+    while (pixelCanvas.childElementCount != 0){
+        pixelCanvas.removeChild(pixelCanvas.lastElementChild)
+    }
+}
+
+
 function makeGrid() {
 
 // Your code goes here!
