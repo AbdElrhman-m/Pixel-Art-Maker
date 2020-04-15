@@ -22,12 +22,14 @@ function cleanGrid(){
 function makeGrid(inputHeight, inputWidth, colorPicker, pixelCanvas) {
     
     // Your code goes here!
+    // clear the out put 
+    cleanGrid();
     // reassign the varriable everytime
     inputHeight   = document.querySelector("#inputHeight").value;
     inputWidth    = document.querySelector("#inputWidth").value;
     for (let i = 1; i <= inputHeight; i++) {
         let gRow = document.createElement('tr');
-        console.log(gCell);
+        console.log(gRow);
         pixelCanvas.appendChild(gRow);
         for (let j = 1; j <= inputWidth; j++) {
             let gCell = document.createElement('td');
