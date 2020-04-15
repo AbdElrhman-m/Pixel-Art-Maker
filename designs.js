@@ -24,3 +24,10 @@ function makeGrid() {
 // Your code goes here!
 
 }
+
+// show the gird after activation
+
+sizePicker.addEventListener('submit', function(e) {
+  e.preventDefault();
+  makeGrid();
+});
