@@ -9,9 +9,7 @@ let colorPicker   = document.querySelector("#colorPicker").value,
     inputHeight   = document.querySelector("#inputHeight").value,
     inputWidth    = document.querySelector("#inputWidth").value;
 // test
-console.log(inputHeight);
-console.log("" + inputWidth);
-console.log(colorPicker)
+
 function cleanGrid(){
     "use strict";
     while (pixelCanvas.childElementCount != 0){
@@ -21,7 +19,6 @@ function cleanGrid(){
 
 
 function makeGrid(inputHeight, inputWidth, colorPicker, pixelCanvas) {
-    console.log(colorPicker)
     // Your code goes here!
     // clear the out put 
     cleanGrid();
@@ -31,11 +28,9 @@ function makeGrid(inputHeight, inputWidth, colorPicker, pixelCanvas) {
     
     for (let i = 1; i <= inputHeight; i++) {
         let gRow = document.createElement('tr');
-        console.log(gRow);
         pixelCanvas.appendChild(gRow);
         for (let j = 1; j <= inputWidth; j++) {
             let gCell = document.createElement('td');
-            console.log(gCell);
             gRow.appendChild(gCell);
             gCell.addEventListener('mousedown', function() {
                 colorPicker   = document.querySelector("#colorPicker").value;
