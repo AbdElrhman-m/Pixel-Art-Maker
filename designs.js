@@ -1,12 +1,13 @@
 // define all the dom element need for this project
-const colorPicker   = document.querySelector("#colorPicker").value,
+const 
       sizePicker    = document.querySelector("#sizePicker"),
-      inputHeight   = document.querySelector("#inputHeight").value,
-      inputWidth    = document.querySelector("#inputWidth").value,
       // the submit button to make a grid
       createGridBn  = document.querySelector("input[type=submit]"),
       pixelCanvas   = document.querySelector("#pixelCanvas");
 
+let colorPicker   = document.querySelector("#colorPicker").value,
+    inputHeight   = document.querySelector("#inputHeight").value,
+    inputWidth    = document.querySelector("#inputWidth").value;
 // test
 console.log(inputHeight);
 console.log("" + inputWidth);
