@@ -19,15 +19,31 @@ function cleanGrid(){
 }
 
 
-function makeGrid() {
-
-// Your code goes here!
-
+function makeGrid(inputHeight, inputWidth, colorPicker, pixelCanvas) {
+    
+    // Your code goes here!
+    // reassign the varriable everytime
+    inputHeight   = document.querySelector("#inputHeight").value;
+    inputWidth    = document.querySelector("#inputWidth").value;
+    for (let i = 1; i <= inputHeight; i++) {
+        let gRow = document.createElement('tr');
+        console.log(gCell);
+        pixelCanvas.appendChild(gRow);
+        for (let j = 1; j <= inputWidth; j++) {
+            let gCell = document.createElement('td');
+            console.log(gCell);
+            gRow.appendChild(gCell);
+            gCell.addEventListener('mousedown', function(colorPicker) {
+                this.style.backgroundColor = colorPicker;
+                console.log(colorPicker);
+            });
+        }
+    }
 }
 
 // show the gird after activation
 
 sizePicker.addEventListener('submit', function(e) {
   e.preventDefault();
-  makeGrid();
+  makeGrid(inputHeight, inputWidth, colorPicker, pixelCanvas);
 });
