@@ -1,5 +1,5 @@
 # Pixel Art Maker Project
-
+![project](screenshot.png)
 ## Table of Contents
 
 * [Instructions](#instructions)
