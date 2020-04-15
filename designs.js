@@ -1,5 +1,5 @@
 // define all the dom element need for this project
-const colorPicker   = document.querySelector("#colorPicker"),
+const colorPicker   = document.querySelector("#colorPicker").value,
       sizePicker    = document.querySelector("#sizePicker"),
       inputHeight   = document.querySelector("#inputHeight").value,
       inputWidth    = document.querySelector("#inputWidth").value,
